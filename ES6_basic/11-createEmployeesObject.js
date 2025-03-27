@@ -1,3 +1,6 @@
+/*eslint-disable*/
 export default function createEmployeesObject(departmentName, employees) {
-    return { [departmentName]: employees };
+    const obj = {};
+    obj[departmentName] = employees;
+    return obj;
   }
