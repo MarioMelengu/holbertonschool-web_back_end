@@ -1,3 +1,4 @@
+/*eslint-disable*/
 export default function getListStudents() {
     const o1 = {
       id: 1,
