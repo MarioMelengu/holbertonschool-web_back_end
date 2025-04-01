@@ -1,9 +1,8 @@
 /*eslint-disable*/
-export default function getListStudentIds(arr) {
-    let newArr = [];
-    if (arr instanceof Array) {
-      newArr = arr.map((item) => item.id);
+function getListStudentIds(students) {
+    if (!Array.isArray(students)) {
+        return [];
     }
-  
-    return newArr;
-  }
+
+    return students.map(student => student.id);
+}
